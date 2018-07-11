@@ -1,0 +1,36 @@
+:root {
+  --main-bg-color: #f8f8f8;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 80px;
+}
+
+.App-header {
+  background-color: var(--main-bg-color);
+  height: 150px;
+  padding: 20px;
+  color: #3d464d;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-footer {
+  background-color: var(--main-bg-color);
+  font-size: small;
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+code {
+  color: #e73a37;
+}
