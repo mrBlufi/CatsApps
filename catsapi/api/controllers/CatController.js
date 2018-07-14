@@ -7,12 +7,13 @@
 
 
 module.exports = {  
-  test: function(req, res){
+  getCats: function(req, res){
     var request = require('request');
     var convert = require('xml-js');
 
-    var response;
-    request.get({url: 'http://thecatapi.com/api/images/get?format=xml&results_per_page=21&size=small'},
+    params = req.body
+    console.log(params)
+    request.get({url: `http://thecatapi.com/api/images/get?format=xml&results_per_page=${params.count}&size=${params.size}`},
         (error, response, body) => {
           if (error) {
             console.log(error)

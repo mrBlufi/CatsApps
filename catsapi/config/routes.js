@@ -30,7 +30,7 @@ module.exports.routes = {
 
   '/cat': {
     controller:'cat',
-    action:'test'
+    action:'getCats'
   }
 
   /***************************************************************************
